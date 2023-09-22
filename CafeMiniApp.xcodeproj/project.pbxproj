@@ -16,6 +16,8 @@
 		B910DE6C2AB0AB160076616C /* CafeMiniAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910DE6B2AB0AB160076616C /* CafeMiniAppTests.swift */; };
 		B910DE762AB0AB160076616C /* CafeMiniAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910DE752AB0AB160076616C /* CafeMiniAppUITests.swift */; };
 		B910DE782AB0AB160076616C /* CafeMiniAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910DE772AB0AB160076616C /* CafeMiniAppUITestsLaunchTests.swift */; };
+		B92D78F42AB499E7000AE78B /* twoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92D78F32AB499E7000AE78B /* twoClass.swift */; };
+		B959FFA92AB3552200BA4C8C /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B959FFA82AB3552200BA4C8C /* Admin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B910DE712AB0AB160076616C /* CafeMiniAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeMiniAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B910DE752AB0AB160076616C /* CafeMiniAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMiniAppUITests.swift; sourceTree = "<group>"; };
 		B910DE772AB0AB160076616C /* CafeMiniAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMiniAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B92D78F32AB499E7000AE78B /* twoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twoClass.swift; sourceTree = "<group>"; };
+		B959FFA82AB3552200BA4C8C /* Admin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		B910DE482AB0AB140076616C = {
 			isa = PBXGroup;
 			children = (
+				B92D78F32AB499E7000AE78B /* twoClass.swift */,
+				B959FFA82AB3552200BA4C8C /* Admin.swift */,
 				B910DE532AB0AB140076616C /* CafeMiniApp */,
 				B910DE6A2AB0AB160076616C /* CafeMiniAppTests */,
 				B910DE742AB0AB160076616C /* CafeMiniAppUITests */,
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B92D78F42AB499E7000AE78B /* twoClass.swift in Sources */,
 				B910DE592AB0AB140076616C /* ViewController.swift in Sources */,
 				B910DE552AB0AB140076616C /* AppDelegate.swift in Sources */,
 				B910DE572AB0AB140076616C /* SceneDelegate.swift in Sources */,
+				B959FFA92AB3552200BA4C8C /* Admin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
