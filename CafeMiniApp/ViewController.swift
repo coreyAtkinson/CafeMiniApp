@@ -14,6 +14,12 @@ class ViewController: UIViewController {
     var items : [String] = ["Hot Dog","Apple","Banana","Tomato","Ham"]
     var prices : [Double] = [1.82, 1.15,1.12,5.01,2.01]
    
+    @IBOutlet weak var passwordOutlet: UITextField!
+    @IBOutlet weak var usernameOutlet: UITextField!
+    @IBOutlet weak var addItemOutlet: UIButton!
+    @IBOutlet weak var new2Outlet: UITextField!
+    @IBOutlet weak var new1Outlet: UITextField!
+    @IBOutlet weak var addOutlet: UILabel!
     @IBOutlet weak var priceOutlet: UILabel!
     @IBOutlet weak var cart2Outlet: UITextView!
     @IBOutlet weak var errorOutlet: UILabel!
@@ -30,6 +36,15 @@ class ViewController: UIViewController {
            cart2Outlet.isUserInteractionEnabled = true
         }
        
+        
+        addOutlet.isEnabled = false
+        addOutlet.isHidden = true
+        new1Outlet.isEnabled = false
+        new1Outlet.isHidden = true
+        new2Outlet.isEnabled = false
+        new2Outlet.isHidden = true
+        addItemOutlet.isHidden = true
+        addItemOutlet.isEnabled = false
     }
     
     @IBAction func cartAction(_ sender: UIButton) {
@@ -95,9 +110,7 @@ class ViewController: UIViewController {
         }
         
         
-        func isStringAnInt(string: String) -> Bool {
-            return Int(string) != nil
-        }
+       
         
         
     }
@@ -108,5 +121,46 @@ class ViewController: UIViewController {
     
     
 
+    @IBAction func eAction(_ sender: UIButton) {
+        if usernameOutlet.text == "CoreyA" && passwordOutlet.text == "Ratlord22!"
+        {
+            addOutlet.isEnabled = true
+            addOutlet.isHidden = false
+            new1Outlet.isEnabled = true
+            new1Outlet.isHidden = false
+            new2Outlet.isEnabled = true
+            new2Outlet.isHidden = false
+            addItemOutlet.isHidden = false
+            addItemOutlet.isEnabled = true
+        }
+        
+    }
+    
+    @IBAction func newAction(_ sender: UIButton) {
+        
+        if new1Outlet.text == "" || new2Outlet.text == ""
+        {
+            errorOutlet.text = "Invalad Imput"
+        }
+        if isStringAnInt(string: new2Outlet.text!)
+        {
+          var a = Double(new2Outlet.text!)
+            prices.append(a!)
+            items.append(new1Outlet.text!)
+            
+        }
+        else
+        {
+            errorOutlet.text = "Invalad Imput"
+        }
+        
+    }
+    
+    func isStringAnInt(string: String) -> Bool {
+        return Int(string) != nil
+    }
 }
+
+
+
 
